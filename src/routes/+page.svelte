@@ -2,7 +2,7 @@
 	import Main from '$layouts/Main.svelte';
 	import Heading from '$ui/Heading.svelte';
 	import Motto from '$images/motto.webp';
-	import Marquee from '$components/Marquee.svelte';
+	import Poster from '$images/poster.webp';
 
 	const goals = [
 		{
@@ -31,8 +31,8 @@
 	];
 </script>
 
-<section class="relative h-[calc(100vh-theme(spacing.32))] w-screen">
-	<div class="absolute inset-0 h-full w-full bg-[url('/poster.webp')] bg-cover bg-fixed" />
+<section class="relative h-max w-screen">
+	<img src={Poster} alt="poster" />
 	<div
 		class="absolute inset-0 flex h-full w-full flex-col items-center justify-center gap-10 bg-black/50 text-center text-skin-inverted"
 	>
